@@ -1,7 +1,7 @@
 import React from 'react'
 import {axiosWithAuth} from '../utils/axiosWithAuth';
 import Friend from './Friend'
-
+import AddFriendForm from './AddFriendForm'
 class FriendsList extends React.Component{
     state={
       friends:[]
@@ -28,8 +28,7 @@ class FriendsList extends React.Component{
             <div className="friendslist">
                 <h2>Friends Info</h2>         
                 <Friend friends={this.state.friends} />
-                
-    
+                <AddFriendForm />
             </div>
         )
     }
